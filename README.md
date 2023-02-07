@@ -33,3 +33,6 @@ Install django in venv using the command:
 - There are two fields, first one is to type the file name which you want to upload. Second is file uploading field. After, clicking the "Submit" button, you will get new window where you will the output of the executed file in plot.
 
 - After closing the plot window, you will get the download link where the solution of the file will be downloaded.
+
+- Atlast deactivate the virtual environment : 
+>> deactivate
