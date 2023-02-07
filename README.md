@@ -19,10 +19,11 @@ Directions to run the project
 - Go to "myproject" folder in VS Code and create virtual environment using below command:
 >> virtualenv venv
 
-And enter the command without entering into venv (created virtual environment): source venv/bin/activate
+And enter the command without entering into venv (created virtual environment): 
+>>source venv/bin/activate
 
 Install django in venv using the command:
-    pip install django
+>> pip install django
 
 - Run the following command to execute the Django Project:
 >> python manage.py runserver
