@@ -1,39 +1,71 @@
-# ADX-Indicator
+# 📈 ADX-Indicator Analysis Tool
 
-ADX stands for Average Directional Movement Index. ADX is non-directional. It registers trend strength whether price is trending up or down. When the +DMI is above the -DMI, prices are moving up, and ADX measures the strength of this uptrend. When the -DMI is above the +DMI, prices are moving down, and ADX measures the strength of this downtrend
+A professional Django-based web application designed to calculate and visualize the **Average Directional Movement Index (ADX)**. This tool helps traders and analysts quantify trend strength regardless of price direction.
 
-- Requirments
-1. Python 3.9.0
-2. Django 4.1
-3. Pandas
-4. Numpy
-5. Matplotlib
+---
+
+## 🧐 Understanding ADX
+The **Average Directional Index (ADX)** is a technical indicator used to quantify trend strength. It is non-directional, meaning it registers trend strength whether the price is moving up or down.
+
+* **Uptrend (+DMI > -DMI):** Prices are moving up; ADX measures the strength of the bullish trend.
+* **Downtrend (-DMI > +DMI):** Prices are moving down; ADX measures the strength of the bearish trend.
+
+---
+
+## 🛠 Prerequisites
+Ensure you have the following installed to maintain project compatibility:
+
+| Requirement | Version |
+| :--- | :--- |
+| **Python** | 3.9.0 |
+| **Django** | 4.1 |
+| **Data Libraries** | Pandas, Numpy |
+| **Visualization** | Matplotlib |
+
+---
+
+## 🚀 Installation & Setup
+
+### Environment Configuration
+First, download the `myproject` folder. Open your terminal or command prompt in the `myproject` directory and run the following:
+
+```
+# Create the virtual environment
+virtualenv venv
+
+# Activate the environment
+# On macOS/Linux:
+source venv/bin/activate
+# On Windows:
+venv\Scripts\activate
+```
 
 
-Directions to run the project
+### 📦 Install Dependencies
+With the virtual environment activated, install the necessary packages using pip:
 
-- First download the "myproject" folder.
+```
+pip install django pandas numpy matplotlib
+```
 
-- Open the terminal/cmd in myproject diractory directory and run the command as shown below:
+### ⚡ Launch the Application
+Run the Django development server using the following command:
 
-- Go to "myproject" folder in VS Code and create virtual environment using below command:
->> virtualenv venv
+```
+python manage.py runserver
+```
 
-And enter the command without entering into venv (created virtual environment): 
->>source venv/bin/activate
+Open your web browser and navigate to: http://127.0.0.1:8000/
 
-Install django in venv using the command:
->> pip install django
+### 🖥 User Guide
+1. File Naming: In the first field, type the name you wish to assign to your output file.
+2. Upload Data: Select your data file using the file upload field.
+3. Execute: Click the Submit button. A new window will pop up displaying the generated ADX Plot.
+4. Download: Once you close the plot window, a download link will appear on the main page, allowing you to save the processed solution.
 
-- Run the following command to execute the Django Project:
->> python manage.py runserver
+### 🛑 Project Shutdown
+To stop the server, press `Ctrl+C` in your terminal. To exit the virtual environment and return to your global Python settings, simply run:
 
-- Open the browser and type to see the output
->> http://127.0.0.1:8000/
-
-- There are two fields, first one is to type the file name which you want to upload. Second is file uploading field. After, clicking the "Submit" button, you will get new window where you will the output of the executed file in plot.
-
-- After closing the plot window, you will get the download link where the solution of the file will be downloaded.
-
-- Atlast deactivate the virtual environment : 
->> deactivate
+```
+deactivate
+```
